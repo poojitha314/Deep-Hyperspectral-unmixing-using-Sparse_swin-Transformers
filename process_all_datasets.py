@@ -15,13 +15,13 @@ for name in datasets:
         print(f"❌ Missing results for {name.upper()} (Check .mat files)")
         continue
 
-    print(f"\n📂 Visualizing SparseSwin predictions for: {name.upper()}")
+    print(f"\n Visualizing SparseSwin predictions for: {name.upper()}")
 
     # === Load abundance maps ===
     abd_data = sio.loadmat(abd_path)
     A_est = abd_data.get('A_est')
     if A_est is None:
-        print("⚠️ 'A_est' not found in", abd_path)
+        print("'A_est' not found in", abd_path)
         continue
 
     H, W, P = A_est.shape
@@ -37,13 +37,13 @@ for name in datasets:
 
         save_path = os.path.join(result_dir, f"{name}_abundance_map_{i+1}.png")
         plt.savefig(save_path, bbox_inches='tight')
-        print(f"✅ Saved: {save_path}")
+        print(f" Saved: {save_path}")
         plt.show()
 
     # === Load and plot endmembers ===
     E_est = sio.loadmat(endmem_path).get('E_est')
     if E_est is None:
-        print("⚠️ 'E_est' not found in", endmem_path)
+        print("'E_est' not found in", endmem_path)
         continue
 
     plt.figure(figsize=(8, 5))
@@ -58,5 +58,5 @@ for name in datasets:
 
     save_path = os.path.join(result_dir, f"{name}_endmembers.png")
     plt.savefig(save_path, bbox_inches='tight')
-    print(f"✅ Saved: {save_path}")
+    print(f"Saved: {save_path}")
     plt.show()
