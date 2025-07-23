@@ -1,0 +1,52 @@
+Keys found in samson_dataset.mat:
+__header__
+__version__
+__globals__
+Y
+A
+M
+M1
+
+Keys found in apex_dataset.mat:
+__header__
+__version__
+__globals__
+Y
+A
+M
+M1
+
+Keys found in dc_dataset.mat:
+__header__
+__version__
+__globals__
+GT
+SNR
+S_GT
+Y
+cols
+lines
+p
+
+Keys found in jasperRidge_dataset.mat:
+__header__
+__version__
+__globals__
+Region
+SlectBands
+nRow
+nCol
+nBand
+Y
+maxValue
+
+Keys found in Urban_dataset.mat:
+__header__
+__version__
+__globals__
+SlectBands
+nRow
+nCol
+nBand
+Y
+maxValue
