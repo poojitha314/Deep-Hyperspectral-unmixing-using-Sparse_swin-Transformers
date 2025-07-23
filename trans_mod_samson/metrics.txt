@@ -1,0 +1,10 @@
+Dataset: samson
+RE: 0.011226
+Mean RMSE: 0.141262
+RMSE Class 1: 0.155720
+RMSE Class 2: 0.133372
+RMSE Class 3: 0.133521
+Mean SAD: 0.134502
+SAD Class 1: 0.071797
+SAD Class 2: 0.130100
+SAD Class 3: 0.201609
